@@ -20,9 +20,8 @@ namespace Laboration1del1
         public Vector2 rotationOfField(int x, int y) //tar emot en x och ett y position
         {
             int sizeOfTile = 64;
-            int borderSize = 64;
-            int visualX = borderSize + x * sizeOfTile;
-            int visualY = borderSize + y * sizeOfTile;
+            int visualX = 512 - (x * sizeOfTile);
+            int visualY = 512 - (y * sizeOfTile);
 
             return new Vector2(visualX, visualY);
         }

@@ -106,6 +106,7 @@ namespace Laboration1del1
 
                     if (countB % 2 == 0)
                         spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
+
                     else
                         spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
 

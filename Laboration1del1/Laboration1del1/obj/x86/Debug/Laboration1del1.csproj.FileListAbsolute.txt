@@ -50,3 +50,5 @@ C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\
 C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.csprojResolveAssemblyReference.cache
 C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Content\blackBlock.png
 C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Content\whiteBlock.png
+C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.exe
+C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.pdb

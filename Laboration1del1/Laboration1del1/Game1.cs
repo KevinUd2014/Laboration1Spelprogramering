@@ -114,9 +114,9 @@ namespace Laboration1del1
                         spriteBatch.Draw(whiteBlock, returnPosition(x, y), Color.White);
                 }
                 countB++;
-                countW = countB;
+                countW = countB;// denna går att ta bort 
             }
-            
+            //countB++ //denna kan ersätta över!
 
             spriteBatch.End();
             // TODO: Add your drawing code here

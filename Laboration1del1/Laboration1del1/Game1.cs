@@ -81,7 +81,7 @@ namespace Laboration1del1
             int visualX = borderSize + x * sizeOfTile;
             int visualY = borderSize + y * sizeOfTile;
 
-            return sizeOfTile + borderSize + visualX + visualY;
+            return new Vector2(visualX, visualY);
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Laboration1del1
 
             int x;
             int countB = 1;
-            int countW = 1;
+
 
             for (x = 0; x < 8; x++)
             {
@@ -108,15 +108,15 @@ namespace Laboration1del1
                 for (y = 0; y < 8; y++)
                 {
 
-                    if (countW % 2 == 0)
+                    if (countB % 2 == 0)
                         spriteBatch.Draw(blackBlock, returnPosition(x, y), Color.Black);
                     else
                         spriteBatch.Draw(whiteBlock, returnPosition(x, y), Color.White);
+
+                    countB++;
                 }
                 countB++;
-                countW = countB;// denna går att ta bort 
             }
-            //countB++ //denna kan ersätta över!
 
             spriteBatch.End();
             // TODO: Add your drawing code here

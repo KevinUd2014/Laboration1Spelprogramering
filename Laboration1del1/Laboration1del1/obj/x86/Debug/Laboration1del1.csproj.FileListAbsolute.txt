@@ -1,0 +1,52 @@
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\Laboration1del1.exe
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\Laboration1del1.pdb
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\MonoGame.Framework.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XAudio2.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D11.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.DXGI.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct2D1.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XInput.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.RawInput.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D9.dll
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\MonoGame.Framework.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XAudio2.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D11.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.DXGI.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct2D1.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XInput.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.RawInput.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D9.xml
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.csprojResolveAssemblyReference.cache
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.exe
+c:\users\labuser\documents\visual studio 2013\Projects\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.pdb
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.exe
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.pdb
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Laboration1del1.exe
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Laboration1del1.pdb
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.csprojResolveAssemblyReference.cache
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Content\blackBlock.png
+C:\Users\labuser\Desktop\Game\Laboration1del1\Laboration1del1\bin\Windows\Debug\Content\whiteBlock.png

@@ -12,12 +12,18 @@ namespace Laboration1del1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Camera camera;
+
         Texture2D blackBlock;
         Texture2D whiteBlock;
 
         public Game1()
         {
+            camera = new Camera();
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 632; // detta ändrar fönstrets storlek!
+            graphics.PreferredBackBufferHeight = 632;  
+            graphics.ApplyChanges();
             Content.RootDirectory = "Content";
             //graphics.IsFullScreen = false;// vet inte vad denna gör riktigt
         }
@@ -74,16 +80,6 @@ namespace Laboration1del1
             base.Update(gameTime);
         }
 
-        private Vector2 returnPosition(int x, int y) //tar emot en x och ett y position
-        {
-            int sizeOfTile = 64;
-            int borderSize = 64;
-            int visualX = borderSize + x * sizeOfTile;
-            int visualY = borderSize + y * sizeOfTile;
-
-            return new Vector2(visualX, visualY);
-        }
-
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -109,9 +105,9 @@ namespace Laboration1del1
                 {
 
                     if (countB % 2 == 0)
-                        spriteBatch.Draw(blackBlock, returnPosition(x, y), Color.Black);
+                        spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
                     else
-                        spriteBatch.Draw(whiteBlock, returnPosition(x, y), Color.White);
+                        spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
 
                     countB++;
                 }

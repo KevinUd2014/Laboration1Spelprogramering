@@ -77,3 +77,4 @@ C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Labora
 C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\obj\x86\Debug\Laboration1del1.csprojResolveAssemblyReference.cache
+C:\Users\labuser\Desktop\Game\Laboration1Spelprogramering\Laboration1del1\Laboration1del1\bin\Windows\Debug\Content\Test.png

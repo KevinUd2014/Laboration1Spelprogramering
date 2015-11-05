@@ -16,6 +16,7 @@ namespace Laboration1del1
 
         Texture2D blackBlock;
         Texture2D whiteBlock;
+        Texture2D Test;
 
         public Game1()
         {
@@ -52,6 +53,7 @@ namespace Laboration1del1
 
             blackBlock = Content.Load<Texture2D>("blackBlock.png");
             whiteBlock = Content.Load<Texture2D>("whiteBlock.png");
+            Test = Content.Load<Texture2D>("Test.png");
 
             // TODO: use this.Content to load your game content here
         }
@@ -95,25 +97,29 @@ namespace Laboration1del1
 
             int x;
             int countB = 1;
-
+            int y = 0;
 
             for (x = 0; x < 8; x++)
             {
-                int y;
+                //int y;
 
                 for (y = 0; y < 8; y++)
                 {
 
                     if (countB % 2 == 0)
+                        //spriteBatch.Draw(blackBlock, camera.rotationOfField(x, y), Color.Black);//denna roterar spelet!
                         spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
 
                     else
+                        //spriteBatch.Draw(whiteBlock, camera.rotationOfField(x, y), Color.White);//denna roterar spelet!
                         spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
 
                     countB++;
                 }
                 countB++;
             }
+            spriteBatch.Draw(Test, camera.returnPosition(0, 0), Color.White);
+            //spriteBatch.Draw(Test, camera.rotationOfField(0, 0), Color.White);
 
             spriteBatch.End();
             // TODO: Add your drawing code here

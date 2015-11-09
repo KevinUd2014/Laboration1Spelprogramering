@@ -11,12 +11,14 @@ namespace Laboration1del1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        //int size = Camera.SizeOfTiles
         Camera camera;
 
         Texture2D blackBlock;
         Texture2D whiteBlock;
-        Texture2D Test;
+        Texture2D chessPiece;
+        int width = 64;
+        int height = 64;
 
         public Game1()
         {
@@ -51,9 +53,9 @@ namespace Laboration1del1
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            blackBlock = Content.Load<Texture2D>("blackBlock.png");
-            whiteBlock = Content.Load<Texture2D>("whiteBlock.png");
-            Test = Content.Load<Texture2D>("Test.png");
+            //blackBlock = Content.Load<Texture2D>("blackBlock.png");
+            //whiteBlock = Content.Load<Texture2D>("whiteBlock.png");
+            chessPiece = Content.Load<Texture2D>("11.png");
 
             // TODO: use this.Content to load your game content here
         }
@@ -86,40 +88,63 @@ namespace Laboration1del1
         /// This is called when the game should draw itself.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Draw(GameTime gameTime)
+        protected override void Draw(GameTime gameTime)  // denna ritar ut allt i spelet!
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
 
-            //Vector2 blackBlockPosition = new Vector2(0, 0);
-            //Vector2 whiteBlockPosition = new Vector2(0, 100);
-
             int x;
             int countB = 1;
             int y = 0;
 
+            Texture2D blackBlock = new Texture2D(graphics.GraphicsDevice, camera.getTileSize, camera.getTileSize);
+            Texture2D whiteBlock = new Texture2D(graphics.GraphicsDevice, camera.getTileSize, camera.getTileSize);
+
+            Color[] data = new Color[width * height];
+
+            for (x = 0; x < data.Length; x++)
+            {
+                for (y = 0; y < 64; y++)
+                {
+                        data[x] = Color.Black;
+                }
+            }
+            blackBlock.SetData(data);
+
+            for (x = 0; x < data.Length; x++)
+            {
+                for (y = 0; y < 64; y++)
+                {
+                    data[x] = Color.White;
+                }
+            }
+            whiteBlock.SetData(data);
+
+            Vector2 coor = new Vector2(10, 10);
+            
             for (x = 0; x < 8; x++)
             {
-                //int y;
-
                 for (y = 0; y < 8; y++)
                 {
 
                     if (countB % 2 == 0)
                         //spriteBatch.Draw(blackBlock, camera.rotationOfField(x, y), Color.Black);//denna roterar spelet!
-                        spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
+                        //spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
+                        spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);// denna genererar ut alla svarta block
 
                     else
                         //spriteBatch.Draw(whiteBlock, camera.rotationOfField(x, y), Color.White);//denna roterar spelet!
-                        spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
+                        //spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
+                        spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);// denna genererar ut alla vita block
 
                     countB++;
                 }
                 countB++;
             }
-            spriteBatch.Draw(Test, camera.returnPosition(0, 0), Color.White);
-            //spriteBatch.Draw(Test, camera.rotationOfField(0, 0), Color.White);
+            Vector2 resize = new Vector2(0.15f, 0.15f);
+            spriteBatch.Draw(chessPiece, camera.returnPosition(2, 2), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);
+            //spriteBatch.Draw(chessPiece, camera.rotationOfField(0, 0), Color.White);// genererar ut en chess del
 
             spriteBatch.End();
             // TODO: Add your drawing code here

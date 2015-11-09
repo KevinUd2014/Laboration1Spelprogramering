@@ -12,9 +12,7 @@ namespace Laboration1del1
         int borderSize = 64;
         public float scale;
 
-        public int getTileSize {
-
-            get { return sizeOfTile; }
+        public int getTileSize { get { return sizeOfTile; }
         }
         public Vector2 returnPosition(int x, int y) //tar emot en x och ett y position
         {
@@ -30,7 +28,7 @@ namespace Laboration1del1
 
             return new Vector2(visualX, visualY);
         }
-        public void scaleField(GraphicsDeviceManager Graphic)
+        public void scaleField(float height, float width)
         {
 
         }

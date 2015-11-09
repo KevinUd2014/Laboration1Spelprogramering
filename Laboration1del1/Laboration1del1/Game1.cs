@@ -14,8 +14,8 @@ namespace Laboration1del1
         //int size = Camera.SizeOfTiles
         Camera camera;
 
-        Texture2D blackBlock;
-        Texture2D whiteBlock;
+        //Texture2D blackBlock;
+        //Texture2D whiteBlock;
         Texture2D chessPiece;
         int width = 64;
         int height = 64;
@@ -24,6 +24,7 @@ namespace Laboration1del1
         {
             camera = new Camera();
             graphics = new GraphicsDeviceManager(this);
+            Window.AllowUserResizing = true;
             graphics.PreferredBackBufferWidth = 632; // detta ändrar fönstrets storlek!
             graphics.PreferredBackBufferHeight = 632;  
             graphics.ApplyChanges();
@@ -103,24 +104,6 @@ namespace Laboration1del1
 
             Color[] data = new Color[width * height];
 
-            for (x = 0; x < data.Length; x++)
-            {
-                for (y = 0; y < 64; y++)
-                {
-                        data[x] = Color.Black;
-                }
-            }
-            blackBlock.SetData(data);
-
-            for (x = 0; x < data.Length; x++)
-            {
-                for (y = 0; y < 64; y++)
-                {
-                    data[x] = Color.White;
-                }
-            }
-            whiteBlock.SetData(data);
-
             Vector2 coor = new Vector2(10, 10);
             
             for (x = 0; x < 8; x++)
@@ -129,25 +112,39 @@ namespace Laboration1del1
                 {
 
                     if (countB % 2 == 0)
+                    {
                         //spriteBatch.Draw(blackBlock, camera.rotationOfField(x, y), Color.Black);//denna roterar spelet!
                         //spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
+                        for (int i = 0; i < data.Length; i++)
+                        {
+                            data[i] = Color.Black;
+                        }
+                        blackBlock.SetData(data);
+
                         spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);// denna genererar ut alla svarta block
+                    }
 
                     else
+                    {
+                        for (int i = 0; i < data.Length; i++)
+                        {
+                            data[i] = Color.White;
+                        }
+                        whiteBlock.SetData(data);
                         //spriteBatch.Draw(whiteBlock, camera.rotationOfField(x, y), Color.White);//denna roterar spelet!
                         //spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
                         spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);// denna genererar ut alla vita block
+                    }
 
                     countB++;
                 }
                 countB++;
             }
             Vector2 resize = new Vector2(0.15f, 0.15f);
-            spriteBatch.Draw(chessPiece, camera.returnPosition(2, 2), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);
+            spriteBatch.Draw(chessPiece, camera.returnPosition(1, 2), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);
             //spriteBatch.Draw(chessPiece, camera.rotationOfField(0, 0), Color.White);// genererar ut en chess del
 
             spriteBatch.End();
-            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }

@@ -135,7 +135,6 @@ namespace Laboration1del1
                         //spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);
                         spriteBatch.Draw(whiteBlock, camera.returnPosition(x, y), Color.White);// denna genererar ut alla vita block
                     }
-
                     countB++;
                 }
                 countB++;

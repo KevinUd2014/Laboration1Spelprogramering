@@ -8,9 +8,9 @@ namespace Laboration1del1
 {
     class Camera
     {
-        int sizeOfTile = 64;
-        int borderSize = 64;
-        public float scale;
+        private int sizeOfTile = 64;
+        private int borderSize = 64;
+        //public float scale;
 
         public int getTileSize { get { return sizeOfTile; }
         }
@@ -30,7 +30,11 @@ namespace Laboration1del1
         }
         public void scaleField(float height, float width)
         {
+            float scaleY = (float)height / (sizeOfTile * 8 + borderSize * 2);
+            float scaleX = (float)width / (sizeOfTile * 8 + borderSize * 2);
 
+            //sizeOfTile = Convert.ToInt32(Math.Round(sizeOfTile * scale));
+            //borderSize = Convert.ToInt32(Math.Round(borderSize * scale));
         }
     }
 

@@ -10,11 +10,11 @@ namespace Laboration1del1
     {
         private int sizeOfTile = 64;
         private int borderSize = 64;
-        //public float scale;
+        public float scale;
 
         public int getTileSize { get { return sizeOfTile; }
         }
-        public Vector2 returnPosition(int x, int y) //tar emot en x och ett y position
+        public Vector2 returnPositionOfField(int x, int y) //tar emot en x och ett y position
         {
             int visualX = borderSize + x * sizeOfTile;
             int visualY = borderSize + y * sizeOfTile;
@@ -28,13 +28,31 @@ namespace Laboration1del1
 
             return new Vector2(visualX, visualY);
         }
-        public void scaleField(float height, float width)
+        public float scaleOfField(float height, float width)
         {
-            float scaleY = (float)height / (sizeOfTile * 8 + borderSize * 2);
-            float scaleX = (float)width / (sizeOfTile * 8 + borderSize * 2);
+            // float scaleY = (float)height / (sizeOfTile * 8 + borderSize * 2);
+            // float scaleX = (float)width / (sizeOfTile * 8 + borderSize * 2);
+            float scale = (sizeOfTile / height) + (sizeOfTile / width);
+            scale = scale / 2;
+            return scale;
 
             //sizeOfTile = Convert.ToInt32(Math.Round(sizeOfTile * scale));
             //borderSize = Convert.ToInt32(Math.Round(borderSize * scale));
+        }
+        public void scaleWindow(GraphicsDeviceManager graphics)// fick lite småhjälp av de i klassen med denna!
+        {
+            float scaleForX = (float)graphics.GraphicsDevice.Viewport.Width / (sizeOfTile * 8 + borderSize * 2);
+            float scaleForY = (float)graphics.GraphicsDevice.Viewport.Height / (sizeOfTile * 8 + borderSize * 2);
+            if (scaleForX < scaleForY)
+            {
+                scale = scaleForX;
+            }
+            else
+            {
+                scale = scaleForY;
+            }
+            sizeOfTile = Convert.ToInt32(Math.Round(sizeOfTile * scale));
+            borderSize = Convert.ToInt32(Math.Round(borderSize * scale));
         }
     }
 

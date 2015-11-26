@@ -30,14 +30,9 @@ namespace Laboration1del1
         }
         public float scaleOfField(float height, float width)
         {
-            // float scaleY = (float)height / (sizeOfTile * 8 + borderSize * 2);
-            // float scaleX = (float)width / (sizeOfTile * 8 + borderSize * 2);
             float scale = (sizeOfTile / height) + (sizeOfTile / width);
             scale = scale / 2;
             return scale;
-
-            //sizeOfTile = Convert.ToInt32(Math.Round(sizeOfTile * scale));
-            //borderSize = Convert.ToInt32(Math.Round(borderSize * scale));
         }
         public void scaleWindow(GraphicsDeviceManager graphics)// fick lite småhjälp av de i klassen med denna!
         {

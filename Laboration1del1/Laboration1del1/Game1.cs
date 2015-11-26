@@ -112,15 +112,17 @@ namespace Laboration1del1
                 for (y = 0; y < 8; y++)// så ska vi ha en kub på y 
                 {
 
-                    if (countB % 2 == 0)
+                    if (countB % 2 == 0)//när countB delat på 1 blir 0 så kommer svarta rutor att skrivas ut!
                     {
-                        //spriteBatch.Draw(blackBlock, camera.rotationOfField(x, y), Color.Black);//denna roterar spelet!
-                        //spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
+                        
                         for (int i = 0; i < data.Length; i++)
                         {
                             data[i] = Color.Black;
                         }
                         blackBlock.SetData(data);
+
+                        //spriteBatch.Draw(blackBlock, camera.rotationOfField(x, y), Color.Black);//denna roterar spelet!
+                        //spriteBatch.Draw(blackBlock, camera.returnPosition(x, y), Color.Black);
 
                         spriteBatch.Draw(blackBlock, camera.returnPositionOfField(x, y), Color.Black);// denna genererar ut alla svarta block
                     }
@@ -138,11 +140,14 @@ namespace Laboration1del1
                     }
                     countB++;
                 }
-                countB++;
+                countB++;// denna behövs för annars så blir det bara svarta och vita streck
             }
             float resize = camera.scaleOfField(chessPiece.Bounds.Height, chessPiece.Bounds.Width);
-            spriteBatch.Draw(chessPiece, camera.returnPositionOfField(1, 2), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);
-            //spriteBatch.Draw(chessPiece, camera.rotationOfField(0, 0), Color.White);// genererar ut en chess del
+            /*Visuella koordinater - 0,0 = 64,64 || 6,0 = 384,64 || 2,7 = 128,512 || 7,7 = 512,512*/
+            spriteBatch.Draw(chessPiece, camera.returnPositionOfField(1, 1), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);
+
+            /*Visuella koordinater - 0,0 = 512,512 || 6,0 = 128,512 || 2,7 = 384,64 || 7,7 = 64,64 */// denna flippar brädet!
+            //spriteBatch.Draw(chessPiece, camera.rotationOfField(1, 2), null, Color.White, 0f, Vector2.Zero, resize, SpriteEffects.None, 0f);// genererar ut en chess del
 
             spriteBatch.End();
 
